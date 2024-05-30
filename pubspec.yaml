@@ -1,7 +1,7 @@
 name: flutter_publish_test
 description: This is a test package for the flutter-publish action, do not depend on it.
 repository: https://github.com/spydon/flutter-publish-test
-version: 0.1.0
+version: 0.2.0
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
