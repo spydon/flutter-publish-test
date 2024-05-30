@@ -6,19 +6,13 @@ on:
   #  tags:
   #    - '*-v[0-9]+.[0-9]+.[0-9]+'
   #   #- '[a-z0-9_]+-v[0-9]+.[0-9]+.[0-9]+-[A-Za-z0-9-_]*'
-inputs:
-  publish:
-    required: false
-    default: 'false'
 
 jobs:
   publish-package:
     name: Publish package
-      #permissions:
-      #  id-token: write
     runs-on: [ ubuntu-latest ]
     steps:
       - uses: actions/checkout@v3
       - uses: spydon/flutter-publish@main
         with:
-          publish: ${{ inputs.publish }}
+          publish: true
