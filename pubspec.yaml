@@ -1,0 +1,7 @@
+name: flutter_publish_test
+description: This is a test package for the flutter-publish action, do not depend on it.
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
