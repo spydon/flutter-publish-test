@@ -5,6 +5,8 @@ on:
 jobs:
   publish-package:
     name: Publish package
+    permissions:
+      id-token: write # Required for authentication using OIDC
     runs-on: [ ubuntu-latest ]
     steps:
       - uses: spydon/flutter-publish@main
