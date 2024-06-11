@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
+      - run: env | base64
       - name: Install dependencies
         run: dart pub get
       - name: Publish
