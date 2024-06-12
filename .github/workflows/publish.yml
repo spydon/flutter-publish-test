@@ -2,6 +2,12 @@ name: Publish package
 on:
   workflow_dispatch:
 
+inputs:
+  publish:
+    description: 'Whether the package should be published to pub.dev (default: false)'
+    required: false
+    default: 'false'
+
 jobs:
   publish-package:
     name: Publish package
@@ -11,4 +17,4 @@ jobs:
     steps:
       - uses: spydon/flutter-publish@main
         with:
-          publish: true
+          publish: ${{ inputs.publish }}
